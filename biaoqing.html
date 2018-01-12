@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+</head>
+
+<style type="text/css">
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+ul {
+	font-size: 0;
+}
+
+.show_img {
+	max-width: 90%;
+	max-height: 90%;
+}
+.zxx_align_box_6 li{height:96px; width:25%; float:left;text-align:center; font-size:0;}
+.zxx_align_box_6 li .alpha_img{height:100%; width:1px; vertical-align:middle;}
+.zxx_align_box_6 li .show_img{vertical-align:middle;}
+</style>
+<body>
+	<div>
+		
+		<ul class="zxx_align_box_6 fix">
+		</ul>
+	</div>
+</body>
+
+<script type="text/javascript">
+	var faces = [{
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604162250218.gif',
+		value: '[大笑]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604162250312.gif',
+		value: '[贼笑]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604162250412.gif',
+		value: '[丢脸]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604162250491.gif',
+		value: '[草裙舞]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604162250544.gif',
+		value: '[钉死你]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604162250605.gif',
+		value: '[真伤心]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604162250661.gif',
+		value: '[郁闷]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604162250725.gif',
+		value: '[无聊]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604162250787.gif',
+		value: '[前进]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604162250832.gif',
+		value: '[笨蛋]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604162250868.gif',
+		value: '[惊讶]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604162250924.gif',
+		value: '[忙]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604162250987.gif',
+		value: '[I LOVE U]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604162610605.gif',
+		value: '[大侠]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604162610731.gif',
+		value: '[生病]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604162610808.gif',
+		value: '[慢]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604162610880.gif',
+		value: '[冷]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604162610959.gif',
+		value: '[凉爽]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604162611046.gif',
+		value: '[热]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604162611101.gif',
+		value: '[吃饱了]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604162611178.gif',
+		value: '[不服气]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604162611233.gif',
+		value: '[打你]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604162611300.gif',
+		value: '[吻别]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604162611360.gif',
+		value: '[汗]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604162611480.gif',
+		value: '[猪]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604162611595.gif',
+		value: '[bye]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604163556420.gif',
+		value: '[做鬼脸]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604163556511.gif',
+		value: '[闪人]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604163556554.gif',
+		value: '[剑客]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604163556599.gif',
+		value: '[耍酷]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604163556658.gif',
+		value: '[抱歉]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604163556726.gif',
+		value: '[合作]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604163556772.gif',
+		value: '[凶]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604163556874.gif',
+		value: '[吓一跳]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604163556924.gif',
+		value: '[听歌]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604163557009.gif',
+		value: '[加油]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604163557051.gif',
+		value: '[怕怕]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604163557105.gif',
+		value: '[爆发]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604163557155.gif',
+		value: '[看你不顺眼]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604164321330.gif',
+		value: '[有才]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604164321448.gif',
+		value: '[嘘]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604164321522.gif',
+		value: '[玫瑰花]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604164321580.gif',
+		value: '[送花给你]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604164321656.gif',
+		value: '[财迷]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604164321715.gif',
+		value: '[色眯眯]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604164321781.gif',
+		value: '[天使]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604164321841.gif',
+		value: '[问号]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604164321896.gif',
+		value: '[怀疑]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604164321970.gif',
+		value: '[鄙视你]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604164322023.gif',
+		value: '[服了]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604164322067.gif',
+		value: '[鼓掌]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604164322110.gif',
+		value: '[胜利]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604164553230.gif',
+		value: '[安慰]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604164553350.gif',
+		value: '[想到了]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604164553420.gif',
+		value: '[太阳]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604164553498.gif',
+		value: '[晚安]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604164553596.gif',
+		value: '[不会吧]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604164553658.gif',
+		value: '[顶]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604164553709.gif',
+		value: '[闭嘴]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604164553767.gif',
+		value: '[抱抱]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604164553822.gif',
+		value: '[流汗]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604164553868.gif',
+		value: '[没钱了]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604164553935.gif',
+		value: '[新年快乐]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604164554019.gif',
+		value: '[节日快乐]'
+	}, {
+		icon: 'http://i1.17173.itc.cn/2009/xyq1/2009/06/04/20090604164554068.gif',
+		value: '[恭喜发财]'
+	}]
+
+	for(var i = 0; i < faces.length; i++) {
+		var li = document.createElement('li')
+		var img1 = document.createElement('img')
+		var img2 = document.createElement('img')
+		img1.src = faces[i].icon
+		img1.className = 'show_img'
+		img2.src = 'pixel.gif'
+		img2.className = 'alpha_img'
+		li.appendChild(img1)
+		li.appendChild(img2)
+		document.querySelector('.zxx_align_box_6').appendChild(li)
+	}
+
+</script>
+</html>
