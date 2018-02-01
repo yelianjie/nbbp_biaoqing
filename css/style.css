@@ -159,7 +159,7 @@ body {
 
 .scroller-wrap {
 	overflow-x: hidden;
-	overflow-y: auto;
+	overflow-y: hidden;
 	left: 0.6rem;
 	top: 0.7rem;
 	right: 0.6rem;

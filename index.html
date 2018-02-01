@@ -145,10 +145,26 @@
       </div>
 
     </div>
-
+    <style type="text/css">
+        .iScrollVerticalScrollbar {
+            position: absolute;
+    z-index: 9999;
+    width: 7px;
+    bottom: 2px;
+    top: 2px;
+    right: 1px;
+        }
+        .iScrollIndicator {
+            box-sizing: border-box;
+    position: absolute;
+    background: rgba(193, 86, 86, 0.4);
+    border-radius: 3px;
+    width: 100%;
+        }
+    </style>
     <script type="text/javascript" src="https://cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
     <script type="text/javascript" src="https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js"></script>
-    <script type="text/javascript" src="js/bscroll.min.js"></script>
+    <script type="text/javascript" src="js/iscroll.js"></script>
     <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
     <script type="text/javascript" src="js/dialog.min.js"></script>
     <script type="text/javascript">
@@ -156,11 +172,9 @@
       $(function() {
         var scrolls = document.querySelectorAll('.scroller-wrap')
         for(var i = 0; i < scrolls.length; i++) {
-            new BScroll(scrolls[i],{
-                scrollbar: {
-                 fade: false,
-                 interactive: false // 1.8.0 新增
-                }
+            new IScroll(scrolls[i],{
+                scrollbars: 'custom',
+                preventDefaultException: { tagName: /^(LABEL|INPUT|TEXTAREA|BUTTON|SELECT)$/}
             }) 
         }
       	imagesLoaded( document.body,{ background: '.scene' }, function() {
